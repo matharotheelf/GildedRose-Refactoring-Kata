@@ -33,10 +33,13 @@ class NonSpecial {
     }
   }
 
-  updateQuality() {
-    this._reduceSellIn()
+  _changeIfPositive() {
     if (this._isPositiveQuality()) {
       this._changeQuality()
     }
+  }
+  updateQuality() {
+    this._reduceSellIn()
+    this._changeIfPositive()
   }
 }
