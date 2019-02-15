@@ -3,4 +3,6 @@ class Sulfuras {
     this.sellIn = sellIn
     this.quality = quality
   }
+
+  updateQuality() {}
 }
