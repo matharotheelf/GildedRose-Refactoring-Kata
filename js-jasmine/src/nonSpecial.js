@@ -3,14 +3,29 @@ class NonSpecial {
     this.sellIn = sellIn
     this.quality = quality
   }
+   _isOutOfDate() {
+    return this.sellIn < 1
+  }
+
+  _reduceQualityOne() {
+    this.quality = this.quality - 1
+  }
+
+  _reduceQualityTwo() {
+    this.quality = this.quality - 2
+  }
+
+  _reduceSellIn() {
+    this.sellIn = this.sellIn - 1
+  }
 
   updateQuality() {
-    this.sellIn = this.sellIn - 1
-    if (this.sellIn < 1) {
-      this.quality = this.quality - 2
+    this._reduceSellIn()
+    if (this._isOutOfDate()) {
+      this._reduceQualityTwo()
     }
     else {
-      this.quality = this.quality - 1
+      this._reduceQualityOne()
     }
   }
 }
