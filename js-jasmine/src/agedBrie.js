@@ -3,13 +3,33 @@ class AgedBrie {
     this.sellIn = sellIn
     this.quality = quality
   }
-  updateQuality() {
-    this.sellIn = this.sellIn - 1
-    if (this.sellIn < 1) {
-      this.quality = this.quality + 2
+
+  _isOutOfDate() {
+   return this.sellIn < 1
+ }
+
+
+ _addQualityOne() {
+   this.quality = this.quality + 1
+ }
+
+ _addQualityTwo() {
+   this.quality = this.quality + 2
+ }
+
+ _reduceSellIn() {
+   this.sellIn = this.sellIn - 1
+ }
+
+ updateQuality() {
+    this._reduceSellIn()
+    if (this._isOutOfDate()) {
+      this._addQualityTwo()
     }
     else {
-      this.quality = this.quality + 1
+      this._addQualityOne()
     }
   }
+
+
 }
