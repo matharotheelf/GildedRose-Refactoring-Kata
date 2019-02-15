@@ -21,14 +21,21 @@ class AgedBrie {
    this.sellIn = this.sellIn - 1
  }
 
+ _changeQuality() {
+   if (this._isOutOfDate()) {
+     this._addQualityTwo()
+   }
+   else {
+     this._addQualityOne()
+   }
+   if (this.quality > 50) {
+     this.quality = 50
+   }
+ }
+
  updateQuality() {
     this._reduceSellIn()
-    if (this._isOutOfDate()) {
-      this._addQualityTwo()
-    }
-    else {
-      this._addQualityOne()
-    }
+    this._changeQuality()
   }
 
 
