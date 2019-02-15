@@ -8,7 +8,6 @@ class AgedBrie {
    return this.sellIn < 1
  }
 
-
  _addQualityOne() {
    this.quality = this.quality + 1
  }
@@ -21,16 +20,24 @@ class AgedBrie {
    this.sellIn = this.sellIn - 1
  }
 
- _changeQuality() {
+ _maxFifty() {
+   if (this.quality > 50) {
+     this.quality = 50
+   }
+ }
+
+ _addQuality() {
    if (this._isOutOfDate()) {
      this._addQualityTwo()
    }
    else {
      this._addQualityOne()
    }
-   if (this.quality > 50) {
-     this.quality = 50
-   }
+ }
+
+ _changeQuality() {
+   this._addQuality()
+   this._maxFifty()
  }
 
  updateQuality() {
