@@ -19,13 +19,17 @@ class NonSpecial {
     this.sellIn = this.sellIn - 1
   }
 
-  updateQuality() {
-    this._reduceSellIn()
+  _changeQuality() {
     if (this._isOutOfDate()) {
       this._reduceQualityTwo()
     }
     else {
       this._reduceQualityOne()
     }
+  }
+
+  updateQuality() {
+    this._reduceSellIn()
+    this._changeQuality()
   }
 }
