@@ -35,7 +35,7 @@ class NonSpecial {
 
   updateQuality() {
     this._reduceSellIn()
-    if(this._isPositiveQuality()) {
+    if (this._isPositiveQuality()) {
       this._changeQuality()
     }
   }
