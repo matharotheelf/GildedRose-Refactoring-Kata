@@ -75,12 +75,21 @@ describe("Gilded Rose", function() {
 
   describe("Sulfuras, Hand of Ragnaros", function() {
 
-    it("sellin does not change nor quality", function() {
+    it("sellin does not change nor quality when sellin positive", function() {
 
       const gildedRose = new Shop([ new Item('Sulfuras, Hand of Ragnaros', 2, 2) ]);
       const items = gildedRose.updateQuality();
       expect(items[0].sellIn).toEqual(2);
       expect(items[0].quality).toEqual(2);
+    })
+
+    it("sellin does not change nor quality when sellin negitive or 0", function() {
+
+      const gildedRose = new Shop([ new Item('Sulfuras, Hand of Ragnaros', -1, 2) ]);
+      const items = gildedRose.updateQuality();
+      expect(items[0].sellIn).toEqual(0);
+      expect(items[0].quality).toEqual(2);
+
     })
   })
 
