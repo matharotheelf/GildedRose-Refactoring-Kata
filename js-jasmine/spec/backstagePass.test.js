@@ -9,6 +9,13 @@ describe("BackstagePass", function() {
     expect(backstagepass.quality).toEqual(6);
   })
 
+  it("sellIn decreases and quality increases by one when sellin >10", function() {
+    const backstagepass = new BackstagePass(12, 4);
+    backstagepass.updateQuality()
+    expect(backstagepass.sellIn).toEqual(11);
+    expect(backstagepass.quality).toEqual(5);
+  })
+
 
 
 
