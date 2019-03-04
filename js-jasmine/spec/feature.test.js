@@ -118,12 +118,12 @@ describe("Gilded Rose", function() {
       expect(items[0].quality).toEqual(5);
     })
 
-    it("sellin decreases by 1, quality becomes 0 when sellin =<0", function() {
+    it("sellin decreases by 1, quality increases by 2 when sellin =<5, >0 but quality 48", function() {
 
-      const gildedRose = new Shop([ new Item('Backstage passes to a TAFKAL80ETC concert', 0, 2) ]);
+      const gildedRose = new Shop([ new Item('Backstage passes to a TAFKAL80ETC concert', 5, 48) ]);
       const items = gildedRose.updateQuality();
-      expect(items[0].sellIn).toEqual(-1);
-      expect(items[0].quality).toEqual(0);
+      expect(items[0].sellIn).toEqual(4);
+      expect(items[0].quality).toEqual(50);
     })
 
     it("sellin decreases by 1, quality becomes 0 when sellin =<0", function() {
@@ -134,7 +134,15 @@ describe("Gilded Rose", function() {
       expect(items[0].quality).toEqual(0);
     })
 
-    it("sellin decreases by 1, quality can not increase more than 50", function() {
+    it("sellin decreases by 1, quality becomes 0 when sellin =<0", function() {
+
+      const gildedRose = new Shop([ new Item('Backstage passes to a TAFKAL80ETC concert', 0, 2) ]);
+      const items = gildedRose.updateQuality();
+      expect(items[0].sellIn).toEqual(-1);
+      expect(items[0].quality).toEqual(0);
+    })
+
+    it("sellin decreases by 1, quality can not increase more than 50 when at 50", function() {
 
       const gildedRose = new Shop([ new Item('Backstage passes to a TAFKAL80ETC concert', 5, 50) ]);
       const items = gildedRose.updateQuality();
