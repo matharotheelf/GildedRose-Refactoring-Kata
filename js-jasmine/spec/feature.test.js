@@ -3,6 +3,17 @@ const { Shop } = require('../src/gilded_rose.js')
 
 describe("Gilded Rose", function() {
 
+  describe("Shop", function() {
+
+    it("items default empty list", function() {
+
+      const gildedRose = new Shop()
+      expect(gildedRose.items).toEqual([])
+
+    })
+
+  })
+
   describe("non-special items", function() {
 
     it("sellIn and quality decreases by 1 before sell by date", function() {
@@ -89,6 +100,14 @@ describe("Gilded Rose", function() {
       const items = gildedRose.updateQuality();
       expect(items[0].sellIn).toEqual(5);
       expect(items[0].quality).toEqual(4);
+    })
+
+    it("sellin decreases by 1, quality doesn't increase past 50 when =<10, >5 but quality 49", function() {
+
+      const gildedRose = new Shop([ new Item('Backstage passes to a TAFKAL80ETC concert', 6, 49) ]);
+      const items = gildedRose.updateQuality();
+      expect(items[0].sellIn).toEqual(5);
+      expect(items[0].quality).toEqual(50);
     })
 
     it("sellin decreases by 1, quality increases by 3 when sellin =<5, >0", function() {
