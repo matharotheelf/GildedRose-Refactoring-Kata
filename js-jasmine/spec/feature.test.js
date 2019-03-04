@@ -63,6 +63,15 @@ describe("Gilded Rose", function() {
       expect(items[0].quality).toEqual(2);
     })
 
+    it("sellin descreases by 1 quality does not pass 50 after sellIn", function() {
+
+      const gildedRose = new Shop([ new Item('Aged Brie',0, 49) ]);
+      const items = gildedRose.updateQuality();
+      expect(items[0].sellIn).toEqual(-1);
+      expect(items[0].quality).toEqual(50);
+
+    })
+
     it("sellin decreases by 1, quality doesn't increase past 50", function () {
 
       const gildedRose = new Shop([ new Item('Aged Brie', 1, 50) ]);
