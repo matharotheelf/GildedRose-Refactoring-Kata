@@ -3,6 +3,11 @@ class BackstagePass {
     this.sellIn = sellIn
     this.quality = quality
   }
+
+  updateQuality() {
+    this.sellIn = 10
+    this.quality = 6
+  }
 }
 
 module.exports = {

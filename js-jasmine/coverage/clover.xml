@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551719834452" clover="3.2.0">
-  <project timestamp="1551719834452" name="All files">
-    <metrics statements="68" coveredstatements="68" conditionals="43" coveredconditionals="43" methods="24" coveredmethods="24" elements="135" coveredelements="135" complexity="0" loc="68" ncloc="68" packages="1" files="5" classes="5"/>
+<coverage generated="1551722050595" clover="3.2.0">
+  <project timestamp="1551722050595" name="All files">
+    <metrics statements="70" coveredstatements="70" conditionals="43" coveredconditionals="43" methods="25" coveredmethods="25" elements="138" coveredelements="138" complexity="0" loc="70" ncloc="70" packages="1" files="5" classes="5"/>
     <file name="agedBrie.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/agedBrie.js">
       <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
       <line num="3" count="3" type="stmt"/>
@@ -22,10 +22,12 @@
       <line num="51" count="1" type="stmt"/>
     </file>
     <file name="backstagePass.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/backstagePass.js">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
     </file>
     <file name="gilded_rose.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/gilded_rose.js">
       <metrics statements="31" coveredstatements="31" conditionals="35" coveredconditionals="35" methods="3" coveredmethods="3"/>

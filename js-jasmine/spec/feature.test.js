@@ -96,7 +96,7 @@ describe("Gilded Rose", function() {
 
       const gildedRose = new Shop([ new Item('Sulfuras, Hand of Ragnaros', -1, 2) ]);
       const items = gildedRose.updateQuality();
-      expect(items[0].sellIn).toEqual(0);
+      expect(items[0].sellIn).toEqual(-1);
       expect(items[0].quality).toEqual(2);
 
     })
