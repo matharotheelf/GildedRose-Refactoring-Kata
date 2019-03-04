@@ -1,3 +1,6 @@
+const { Item } = require('../src/gilded_rose.js')
+const { Shop } = require('../src/gilded_rose.js')
+
 describe("Item", function() {
 
   it("name should remain the same", function() {

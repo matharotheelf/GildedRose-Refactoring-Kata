@@ -6,3 +6,7 @@ class Sulfuras {
 
   updateQuality() {}
 }
+
+module.exports = {
+  Sulfuras
+}

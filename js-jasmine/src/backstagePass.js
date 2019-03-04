@@ -4,3 +4,7 @@ class BackstagePass {
     this.quality = quality
   }
 }
+
+module.exports = {
+  BackstagePass
+}

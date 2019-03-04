@@ -43,3 +43,7 @@ class NonSpecial {
     this._changeIfPositive()
   }
 }
+
+module.exports = {
+  NonSpecial
+}
