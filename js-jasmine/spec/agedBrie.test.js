@@ -11,10 +11,10 @@ describe("AgedBrie", function() {
       expect(agedbrie.quality).toEqual(6);
     })
 
-    it("change sellIn by -1 and quality by 2 while sellIn < 1", function() {
-      const agedbrie = new AgedBrie(0, 5);
+    it("change sellIn by -1 and quality by 2 while sellIn < 0", function() {
+      const agedbrie = new AgedBrie(-1, 5);
       agedbrie.updateQuality();
-      expect(agedbrie.sellIn).toEqual(-1);
+      expect(agedbrie.sellIn).toEqual(-2);
       expect(agedbrie.quality).toEqual(7);
     })
 

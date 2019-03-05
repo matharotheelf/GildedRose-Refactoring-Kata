@@ -11,7 +11,7 @@ class AgedBrie {
  }
 
  _addQuality() {
-   if (this.sellIn < 1) {
+   if (this.sellIn < 0) {
      this.quality += 2
    }
    else {
