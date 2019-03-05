@@ -5,8 +5,13 @@ class BackstagePass {
   }
 
   updateQuality() {
-    this.sellIn -= 1
-    this.quality += 1
+    if (this.sellIn > 10) {
+      this.sellIn -= 1
+      this.quality += 1
+    } else {
+      this.sellIn -= 1
+      this.quality += 2
+    }
   }
 }
 
