@@ -20,9 +20,9 @@ class AgedBrie {
  }
 
  updateQuality() {
-    this.sellIn -= 1
     this._addQuality()
     this._maxFifty()
+    this.sellIn -= 1
   }
 }
 
