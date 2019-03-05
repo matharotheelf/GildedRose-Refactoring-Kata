@@ -1,5 +1,5 @@
 const { Item } = require('../src/item.js')
-const { Shop } = require('../src/gilded_rose.js')
+const { Shop } = require('../src/shop.js')
 
 describe("Gilded Rose", function() {
 

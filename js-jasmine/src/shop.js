@@ -1,8 +1,20 @@
+const { NonSpecial } = require('./nonSpecial.js')
+const { option } = require('./option.js')
+
 
 class Shop {
   constructor(items=[]){
     this.items = items;
   }
+
+  converter(item) {
+    if (!(item.name in option)){
+      return new NonSpecial(item.sellIn, item.quality)
+    } else {
+      return new option[item.name](item.sellIn, item.quality)
+    }
+  }
+
 
   updateQuality() {
     for (var i = 0; i < this.items.length; i++) {
