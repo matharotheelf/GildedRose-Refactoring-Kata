@@ -10,25 +10,13 @@ class BackstagePass {
     this.sellIn -= 1
   }
 
-  _reduceQualityOne() {
-    this.quality += 1
-  }
-
-  _reduceQualityTwo() {
-    this.quality += 2
-  }
-
-  _reduceQualityThree() {
-    this.quality += 3
-  }
-
   _addQuality() {
     if (this.sellIn > 10) {
-      this._reduceQualityOne()
+      this.quality += 1
     } else if (this.sellIn > 5 ) {
-      this._reduceQualityTwo()
+      this.quality += 2
     } else {
-      this._reduceQualityThree()
+      this.quality += 3
     }
   }
 
