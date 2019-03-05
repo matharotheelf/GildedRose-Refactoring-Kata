@@ -7,30 +7,28 @@ class BackstagePass {
   updateQuality() {
     this._addQuality()
     this._maxFifty()
+    this.sellIn -= 1
   }
 
-  _changeQualityOne() {
-    this.sellIn -= 1
+  _reduceQualityOne() {
     this.quality += 1
   }
 
-  _changeQualityTwo() {
-    this.sellIn -= 1
+  _reduceQualityTwo() {
     this.quality += 2
   }
 
-  _changeQualityThree() {
-    this.sellIn -= 1
+  _reduceQualityThree() {
     this.quality += 3
   }
 
   _addQuality() {
     if (this.sellIn > 10) {
-      this._changeQualityOne()
+      this._reduceQualityOne()
     } else if (this.sellIn > 5 ) {
-      this._changeQualityTwo()
+      this._reduceQualityTwo()
     } else {
-      this._changeQualityThree()
+      this._reduceQualityThree()
     }
   }
 
