@@ -1,15 +1,9 @@
-class Item {
-  constructor(name, sellIn, quality){
-    this.name = name;
-    this.sellIn = sellIn;
-    this.quality = quality;
-  }
-}
 
 class Shop {
   constructor(items=[]){
     this.items = items;
   }
+
   updateQuality() {
     for (var i = 0; i < this.items.length; i++) {
       if (this.items[i].name != 'Aged Brie' && this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
@@ -61,6 +55,5 @@ class Shop {
   }
 }
 module.exports = {
-  Item,
   Shop
 }

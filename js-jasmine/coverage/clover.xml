@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551799365784" clover="3.2.0">
-  <project timestamp="1551799365784" name="All files">
-    <metrics statements="82" coveredstatements="82" conditionals="55" coveredconditionals="55" methods="21" coveredmethods="21" elements="158" coveredelements="158" complexity="0" loc="82" ncloc="82" packages="1" files="6" classes="6"/>
+<coverage generated="1551804733426" clover="3.2.0">
+  <project timestamp="1551804733426" name="All files">
+    <metrics statements="83" coveredstatements="83" conditionals="55" coveredconditionals="55" methods="21" coveredmethods="21" elements="159" coveredelements="159" complexity="0" loc="83" ncloc="83" packages="1" files="7" classes="7"/>
     <file name="agedBrie.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/agedBrie.js">
       <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
       <line num="3" count="3" type="stmt"/>
@@ -49,38 +49,42 @@
       <line num="30" count="1" type="stmt"/>
     </file>
     <file name="gilded_rose.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/gilded_rose.js">
-      <metrics statements="31" coveredstatements="31" conditionals="35" coveredconditionals="35" methods="3" coveredmethods="3"/>
-      <line num="3" count="18" type="stmt"/>
-      <line num="4" count="18" type="stmt"/>
-      <line num="5" count="18" type="stmt"/>
-      <line num="11" count="19" type="stmt"/>
-      <line num="14" count="18" type="stmt"/>
-      <line num="15" count="18" type="cond" truecount="4" falsecount="0"/>
-      <line num="16" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="22" count="12" type="cond" truecount="2" falsecount="0"/>
-      <line num="23" count="10" type="stmt"/>
-      <line num="24" count="10" type="cond" truecount="2" falsecount="0"/>
-      <line num="25" count="7" type="cond" truecount="2" falsecount="0"/>
-      <line num="26" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="27" count="5" type="stmt"/>
-      <line num="30" count="7" type="cond" truecount="2" falsecount="0"/>
-      <line num="31" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="32" count="3" type="stmt"/>
-      <line num="38" count="18" type="cond" truecount="2" falsecount="0"/>
-      <line num="39" count="16" type="stmt"/>
-      <line num="41" count="18" type="cond" truecount="2" falsecount="0"/>
-      <line num="42" count="7" type="cond" truecount="2" falsecount="0"/>
-      <line num="43" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="44" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="45" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="46" count="1" type="stmt"/>
-      <line num="50" count="2" type="stmt"/>
-      <line num="53" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="54" count="1" type="stmt"/>
-      <line num="60" count="18" type="stmt"/>
-      <line num="63" count="2" type="stmt"/>
+      <metrics statements="28" coveredstatements="28" conditionals="35" coveredconditionals="35" methods="2" coveredmethods="2"/>
+      <line num="4" count="19" type="stmt"/>
+      <line num="8" count="18" type="stmt"/>
+      <line num="9" count="18" type="cond" truecount="4" falsecount="0"/>
+      <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="16" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="10" type="stmt"/>
+      <line num="18" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="5" type="stmt"/>
+      <line num="24" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="32" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="16" type="stmt"/>
+      <line num="35" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="36" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="37" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="38" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="44" count="2" type="stmt"/>
+      <line num="47" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="48" count="1" type="stmt"/>
+      <line num="54" count="18" type="stmt"/>
+      <line num="57" count="2" type="stmt"/>
+    </file>
+    <file name="item.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/item.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="19" type="stmt"/>
+      <line num="4" count="19" type="stmt"/>
+      <line num="5" count="19" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
     </file>
     <file name="nonSpecial.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/nonSpecial.js">
       <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
