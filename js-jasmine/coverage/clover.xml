@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551788348717" clover="3.2.0">
-  <project timestamp="1551788348717" name="All files">
-    <metrics statements="81" coveredstatements="81" conditionals="49" coveredconditionals="49" methods="30" coveredmethods="30" elements="160" coveredelements="160" complexity="0" loc="81" ncloc="81" packages="1" files="5" classes="5"/>
+<coverage generated="1551793568065" clover="3.2.0">
+  <project timestamp="1551793568065" name="All files">
+    <metrics statements="84" coveredstatements="84" conditionals="49" coveredconditionals="49" methods="31" coveredmethods="31" elements="164" coveredelements="164" complexity="0" loc="84" ncloc="84" packages="1" files="6" classes="6"/>
     <file name="agedBrie.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/agedBrie.js">
       <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
       <line num="3" count="3" type="stmt"/>
@@ -39,6 +39,12 @@
       <line num="36" count="5" type="cond" truecount="2" falsecount="0"/>
       <line num="37" count="1" type="stmt"/>
       <line num="42" count="1" type="stmt"/>
+    </file>
+    <file name="conjured.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/conjured.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
     </file>
     <file name="gilded_rose.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/gilded_rose.js">
       <metrics statements="31" coveredstatements="31" conditionals="35" coveredconditionals="35" methods="3" coveredmethods="3"/>
