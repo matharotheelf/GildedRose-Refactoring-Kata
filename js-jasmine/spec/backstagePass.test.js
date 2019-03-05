@@ -30,6 +30,14 @@ describe("BackstagePass", function() {
     expect(backstagepass.quality).toEqual(7);
   })
 
+  it("sellIn decreases by one and quality is 0 when sellin <0", function() {
+    const backstagepass = new BackstagePass(0, 20);
+    backstagepass.updateQuality()
+    expect(backstagepass.sellIn).toEqual(-1);
+    expect(backstagepass.quality).toEqual(0);
+  })
+
+
   it("sellIn does not increase past 50", function() {
     const backstagepass = new BackstagePass(4, 48);
     backstagepass.updateQuality()
