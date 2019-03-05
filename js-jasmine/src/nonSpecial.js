@@ -13,15 +13,15 @@ class NonSpecial {
 
 
   _reduceQualityOne() {
-    this.quality = this.quality - 1
+    this.quality -= 1
   }
 
   _reduceQualityTwo() {
-    this.quality = this.quality - 2
+    this.quality -= 2
   }
 
   _reduceSellIn() {
-    this.sellIn = this.sellIn - 1
+    this.sellIn -= 1
   }
 
   _changeQuality() {

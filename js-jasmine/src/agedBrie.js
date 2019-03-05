@@ -9,15 +9,15 @@ class AgedBrie {
  }
 
  _addQualityOne() {
-   this.quality = this.quality + 1
+   this.quality += 1
  }
 
  _addQualityTwo() {
-   this.quality = this.quality + 2
+   this.quality += 2
  }
 
  _reduceSellIn() {
-   this.sellIn = this.sellIn - 1
+   this.sellIn -= 1
  }
 
  _maxFifty() {

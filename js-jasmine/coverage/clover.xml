@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551722388112" clover="3.2.0">
-  <project timestamp="1551722388112" name="All files">
+<coverage generated="1551784135286" clover="3.2.0">
+  <project timestamp="1551784135286" name="All files">
     <metrics statements="70" coveredstatements="70" conditionals="43" coveredconditionals="43" methods="25" coveredmethods="25" elements="138" coveredelements="138" complexity="0" loc="70" ncloc="70" packages="1" files="5" classes="5"/>
     <file name="agedBrie.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/agedBrie.js">
       <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
