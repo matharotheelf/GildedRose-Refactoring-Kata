@@ -12,7 +12,7 @@ class Conjured {
   }
 
   _decreaseQuality() {
-    if (this.sellIn < 0) {
+    if (this.sellIn < 1) {
       this.quality -= 4
     } else {
       this.quality -= 2

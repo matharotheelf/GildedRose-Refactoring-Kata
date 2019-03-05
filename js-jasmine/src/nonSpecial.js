@@ -18,10 +18,11 @@ class NonSpecial {
       this.quality = 0
     }
   }
+
   updateQuality() {
-    this.sellIn -= 1
     this._changeQuality()
     this._minZero()
+    this.sellIn -= 1
   }
 }
 
