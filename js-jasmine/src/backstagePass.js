@@ -14,6 +14,8 @@ class BackstagePass {
     } else {
       this.sellIn -= 1
       this.quality += 3
+    } if (this.quality > 50) {
+      this.quality = 50
     }
   }
 }
