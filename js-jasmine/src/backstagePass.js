@@ -8,9 +8,12 @@ class BackstagePass {
     if (this.sellIn > 10) {
       this.sellIn -= 1
       this.quality += 1
-    } else {
+    } else if (this.sellIn > 5 ) {
       this.sellIn -= 1
       this.quality += 2
+    } else {
+      this.sellIn -= 1
+      this.quality += 3
     }
   }
 }
