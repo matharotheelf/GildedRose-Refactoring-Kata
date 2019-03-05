@@ -5,8 +5,8 @@ class Conjured {
   }
 
   updateQuality() {
-    this.sellIn = 10
-    this.quality = 3
+    this.sellIn -= 1
+    this.quality -= 2
   }
 }
 
