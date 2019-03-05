@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551797748991" clover="3.2.0">
-  <project timestamp="1551797748991" name="All files">
-    <metrics statements="84" coveredstatements="83" conditionals="53" coveredconditionals="52" methods="26" coveredmethods="26" elements="163" coveredelements="161" complexity="0" loc="84" ncloc="84" packages="1" files="6" classes="6"/>
+<coverage generated="1551798330864" clover="3.2.0">
+  <project timestamp="1551798330864" name="All files">
+    <metrics statements="80" coveredstatements="79" conditionals="53" coveredconditionals="52" methods="21" coveredmethods="21" elements="154" coveredelements="152" complexity="0" loc="80" ncloc="80" packages="1" files="6" classes="6"/>
     <file name="agedBrie.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/agedBrie.js">
       <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
       <line num="3" count="3" type="stmt"/>
@@ -81,22 +81,18 @@
       <line num="63" count="2" type="stmt"/>
     </file>
     <file name="nonSpecial.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/nonSpecial.js">
-      <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
       <line num="3" count="3" type="stmt"/>
       <line num="4" count="3" type="stmt"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="11" count="3" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
+      <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
       <line num="24" count="3" type="stmt"/>
-      <line num="28" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="37" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="38" count="2" type="stmt"/>
-      <line num="42" count="3" type="stmt"/>
-      <line num="43" count="3" type="stmt"/>
-      <line num="47" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
     </file>
     <file name="sulfuras.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/sulfuras.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>

@@ -3,44 +3,25 @@ class NonSpecial {
     this.sellIn = sellIn
     this.quality = quality
   }
-   _isOutOfDate() {
-    return this.sellIn < 1
-  }
-
-  _isPositiveQuality() {
-    return this.quality > 0
-  }
-
-
-  _reduceQualityOne() {
-    this.quality -= 1
-  }
-
-  _reduceQualityTwo() {
-    this.quality -= 2
-  }
-
-  _reduceSellIn() {
-    this.sellIn -= 1
-  }
 
   _changeQuality() {
-    if (this._isOutOfDate()) {
-      this._reduceQualityTwo()
+    if (this.sellIn < 1) {
+      this.quality -= 2
     }
     else {
-      this._reduceQualityOne()
+      this.quality -= 1
     }
   }
 
-  _changeIfPositive() {
-    if (this._isPositiveQuality()) {
-      this._changeQuality()
+  _minZero() {
+    if (this.quality < 0) {
+      this.quality = 0
     }
   }
   updateQuality() {
-    this._reduceSellIn()
-    this._changeIfPositive()
+    this.sellIn -= 1
+    this._changeQuality()
+    this._minZero()
   }
 }
 
