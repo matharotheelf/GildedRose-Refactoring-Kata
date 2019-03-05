@@ -9,16 +9,28 @@ class BackstagePass {
     this._maxFifty()
   }
 
+  _changeQualityOne() {
+    this.sellIn -= 1
+    this.quality += 1
+  }
+
+  _changeQualityTwo() {
+    this.sellIn -= 1
+    this.quality += 2
+  }
+
+  _changeQualityThree() {
+    this.sellIn -= 1
+    this.quality += 3
+  }
+
   _addQuality() {
     if (this.sellIn > 10) {
-      this.sellIn -= 1
-      this.quality += 1
+      this._changeQualityOne()
     } else if (this.sellIn > 5 ) {
-      this.sellIn -= 1
-      this.quality += 2
+      this._changeQualityTwo()
     } else {
-      this.sellIn -= 1
-      this.quality += 3
+      this._changeQualityThree()
     }
   }
 

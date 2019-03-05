@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551787110692" clover="3.2.0">
-  <project timestamp="1551787110692" name="All files">
-    <metrics statements="80" coveredstatements="80" conditionals="49" coveredconditionals="49" methods="27" coveredmethods="27" elements="156" coveredelements="156" complexity="0" loc="80" ncloc="80" packages="1" files="5" classes="5"/>
+<coverage generated="1551787408151" clover="3.2.0">
+  <project timestamp="1551787408152" name="All files">
+    <metrics statements="83" coveredstatements="83" conditionals="49" coveredconditionals="49" methods="30" coveredmethods="30" elements="162" coveredelements="162" complexity="0" loc="83" ncloc="83" packages="1" files="5" classes="5"/>
     <file name="agedBrie.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/agedBrie.js">
       <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
       <line num="3" count="3" type="stmt"/>
@@ -22,22 +22,25 @@
       <line num="51" count="1" type="stmt"/>
     </file>
     <file name="backstagePass.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/backstagePass.js">
-      <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
       <line num="3" count="5" type="stmt"/>
       <line num="4" count="5" type="stmt"/>
       <line num="8" count="5" type="stmt"/>
       <line num="9" count="5" type="stmt"/>
-      <line num="13" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="2" type="stmt"/>
       <line num="14" count="2" type="stmt"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="1" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="21" count="2" type="stmt"/>
-      <line num="26" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="28" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="30" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="38" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="44" count="1" type="stmt"/>
     </file>
     <file name="gilded_rose.js" path="/Users/admin/technical_challenge/GildedRose-Refactoring-Kata/js-jasmine/src/gilded_rose.js">
       <metrics statements="31" coveredstatements="31" conditionals="35" coveredconditionals="35" methods="3" coveredmethods="3"/>
