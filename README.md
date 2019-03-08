@@ -1,49 +1,107 @@
-# Gilded Rose Refactoring Kata
+# GildedRose Refactoring Kata
 
-This Kata was originally created by Terry Hughes (http://twitter.com/TerryHughes). It is already on GitHub [here](https://github.com/NotMyself/GildedRose). See also [Bobby Johnson's description of the kata](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/).
+This is a repository for the Gilded Rose Refactoring Kata. The GildedRose is a shop that need help keeping track of the value of its stock. It is the challenge of this kata to refactor this code so it is written more elegently. These are the rules of how the value of its stock varies: 
 
-I translated the original C# into a few other languages, (with a little help from my friends!), and slightly changed the starting position. This means I've actually done a small amount of refactoring already compared with the original form of the kata, and made it easier to get going with writing tests by giving you one failing unit test to start with. I also added test fixtures for Text-Based approval testing with TextTest (see [the TextTests](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/texttests))
+Once the sell by date has passed, Quality degrades twice as fast
 
-As Bobby Johnson points out in his article ["Why Most Solutions to Gilded Rose Miss The Bigger Picture"](http://iamnotmyself.com/2012/12/07/why-most-solutions-to-gilded-rose-miss-the-bigger-picture), it'll actually give you
-better practice at handling a legacy code situation if you do this Kata in the original C#. However, I think this kata
-is also really useful for practicing writing good tests using different frameworks and approaches, and the small changes I've made help with that. I think it's also interesting to compare what the refactored code and tests look like in different programming languages.
+The Quality of an item is never negative
 
-I wrote this article ["Writing Good Tests for the Gilded Rose Kata"](http://coding-is-like-cooking.info/2013/03/writing-good-tests-for-the-gilded-rose-kata/) about how you could use this kata in a [coding dojo](https://leanpub.com/codingdojohandbook).
+“Aged Brie” actually increases in Quality the older it gets
 
-## How to use this Kata
+The Quality of an item is never more than 50
 
-The simplest way is to just clone the code and start hacking away improving the design. You'll want to look at the ["Gilded Rose Requirements"](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/GildedRoseRequirements.txt) which explains what the code is for. I strongly advise you that you'll also need some tests if you want to make sure you don't break the code while you refactor.
+“Sulfuras”, being a legendary item, never has to be sold or decreases in Quality
 
-You could write some unit tests yourself, using the requirements to identify suitable test cases. I've provided a failing unit test in a popular test framework as a starting point for most languages.
+“Backstage passes”, like aged brie, increases in Quality as it’s SellIn value approaches; Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concert
 
-Alternatively, use the "Text-Based" tests provided in this repository. (Read more about that in the next section)
+“Conjured” items degrade in Quality twice as fast as normal items
 
-Whichever testing approach you choose, the idea of the exercise is to do some deliberate practice, and improve your skills at designing test cases and refactoring. The idea is not to re-write the code from scratch, but rather to practice designing tests, taking small steps, running the tests often, and incrementally improving the design. 
+## Getting Started
 
-## Text-Based Approval Testing
+To run the progamme first create an object of the class "Game":
 
-This is a testing approach which is very useful when refactoring legacy code. Before you change the code, you run it, and gather the output of the code as a plain text file. You review the text, and if it correctly describes the behaviour as you understand it, you can "approve" it, and save it as a "Golden Master". Then after you change the code, you run it again, and compare the new output against the Golden Master. Any differences, and the test fails.
+game = Game.new
 
-It's basically the same idea as "assertEquals(expected, actual)" in a unit test, except the text you are comparing is typically much longer, and the "expected" value is saved from actual output, rather than being defined in advance.
+Then you can create a grid of livecells! First you must create a "Grid" object:
 
-Typically a piece of legacy code may not produce suitable textual output from the start, so you may need to modify it before you can write your first text-based approval test. That could involve inserting log statements into the code, or just writing a "main" method that executes the code and prints out what the result is afterwards. It's this latter approach we are using here to test GildedRose.
+grid = Grid.new
 
-The Text-Based tests in this repository are designed to be used with the tool "TextTest" (http://texttest.org). This tool helps you to organize and run text-based tests. There is more information in the README file in the "texttests" subdirectory.
+Then you can seed this grid with livecells by running:
 
-## Get going quickly using Cyber-Dojo
+grid.add_livecell(xcoordinate, ycoordinate)
 
-I've also set this kata up on [cyber-dojo](http://cyber-dojo.org) for several languages, so you can get going really quickly:
+Where "xcoordinate" and "ycoordinate" are the coordinates of the newly seeded livecell in the grid.
 
-- [JUnit, Java](http://cyber-dojo.org/forker/fork/751DD02C4C?avatar=snake&tag=8)
-- [C#](http://cyber-dojo.org/forker/fork/5C5AC766B0?avatar=koala&tag=3)
-- [C++](http://cyber-dojo.org/forker/fork/AA86ECBCC9?avatar=rhino&tag=7)
-- [Ruby](http://cyber-dojo.org/forker/fork/A8943EAF92?avatar=hippo&tag=9)
-- [RSpec, Ruby](http://cyber-dojo.org/forker/fork/8E58B0AD16?avatar=raccoon&tag=3)
-- [Python](http://cyber-dojo.org/forker/fork/297041AA7A?avatar=lion&tag=4)
-- [Cucumber, Java](http://cyber-dojo.org/forker/fork/0F82D4BA89?avatar=gorilla&tag=48) - for this one I've also written some step definitions for you
+Then to find the next iteration's grid you must run "iterate" on the game object with the current grid as a parameter:
 
-## Better Code Hub
+newgrid = game.iterate(grid)
 
-I analysed this repo according to the clean code standards on [Better Code Hub](https://bettercodehub.com) just to get an independent opinion of how bad the code is. Perhaps unsurprisingly, the compliance score is low!
+This command returns the newly created grid so remember to save it to a variable. Then, to discover the positions of livecells in the new grid you can run:
 
-[![BCH compliance](https://bettercodehub.com/edge/badge/emilybache/GildedRose-Refactoring-Kata?branch=master)](https://bettercodehub.com/) 
+newgrid.livecells_array[i].coordinate
+
+Where i is the position of the livecell in the array storing the livecells.
+
+
+### Prerequisites
+
+To run the software you must have installed Ruby version 2.5.1p57 and to run the tests RSpec version 3.8.0.
+
+### Installing
+
+If you have installed bundler (https://bundler.io) you can quickly install all the gems used in this project. To install the gems run "bundle install" in the command line.
+
+## Running the tests
+
+To run the tests run "rspec" in the command line. The tests cover all the features of the program. There are also two feature tests written which run through two scenarios one with a grid with no live cells and one with a grid seeded with live cells.
+
+## Built With
+
+* [Ruby version 2.5.1p57](http://www.dropwizard.io/1.0.2/docs/) - Language used
+* [RSpec version 3.8.0](http://rspec.info) - Testing framework
+
+## Authors
+
+* **Thomas Lawrence**
+
+Challenged created by BBC
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+Thanks to the BBC for creating this challenge
+
+
+### Prerequisites
+
+To run the software you must have installed Ruby version 2.5.1p57 and to run the tests RSpec version 3.8.0.
+
+### Installing
+
+If you have installed bundler (https://bundler.io) you can quickly install all the gems used in this project. To install the gems run "bundle install" in the command line.
+
+## Running the tests
+
+To run the tests run "rspec" in the command line. The tests cover all the features of the program. There are also two feature tests written which run through two scenarios one with a grid with no live cells and one with a grid seeded with live cells.
+
+## Built With
+
+* [Ruby version 2.5.1p57](http://www.dropwizard.io/1.0.2/docs/) - Language used
+* [RSpec version 3.8.0](http://rspec.info) - Testing framework
+
+## Authors
+
+* **Thomas Lawrence**
+
+Challenged created by BBC
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+Thanks to the BBC for creating this challenge
