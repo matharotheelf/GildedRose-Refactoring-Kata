@@ -18,29 +18,7 @@ The Quality of an item is never more than 50
 
 ## Getting Started
 
-To run the progamme first create an object of the class "Game":
-
-game = Game.new
-
-Then you can create a grid of livecells! First you must create a "Grid" object:
-
-grid = Grid.new
-
-Then you can seed this grid with livecells by running:
-
-grid.add_livecell(xcoordinate, ycoordinate)
-
-Where "xcoordinate" and "ycoordinate" are the coordinates of the newly seeded livecell in the grid.
-
-Then to find the next iteration's grid you must run "iterate" on the game object with the current grid as a parameter:
-
-newgrid = game.iterate(grid)
-
-This command returns the newly created grid so remember to save it to a variable. Then, to discover the positions of livecells in the new grid you can run:
-
-newgrid.livecells_array[i].coordinate
-
-Where i is the position of the livecell in the array storing the livecells.
+To start the game initialise 
 
 
 ### Prerequisites
